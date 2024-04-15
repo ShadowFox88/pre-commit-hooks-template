@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json.schemastore.org/package",
+    "name": "pre-commit-hooks-template",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "setup": "pre-commit install",
+        "teardown": "pre-commit uninstall",
+        "test": "pre-commit run --all-files"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
+        "eslint": "^8.52.0",
+        "eslint-config-prettier": "^9.0.0",
+        "prettier": "^3.0.3",
+        "prettier-plugin-sort-json": "^3.1.0"
+    }
+}
